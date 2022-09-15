@@ -7,6 +7,7 @@ WORKDIR /opt/tmserver
 RUN apk add unzip wget
 RUN wget -O /opt/tmserver/TrackmaniaServer.zip http://files2.trackmaniaforever.com/TrackmaniaServer_2011-02-21.zip
 RUN unzip /opt/tmserver/TrackmaniaServer.zip -d /opt/tmserver
+RUN rm /opt/tmserver/TrackmaniaServer.zip
 
 COPY templates/dedicated_cfg.xml /opt/tmserver/GameData/Config/dedicated_cfg.txt
 COPY start.sh /opt/tmserver/
