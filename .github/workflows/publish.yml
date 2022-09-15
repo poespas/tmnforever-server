@@ -27,7 +27,6 @@ jobs:
         with:
           push: true
           tags: wortel538/tmnationsforever-server:latest
-          - name: Docker Hub Description
       - 
         name: Modify docker description
         uses: peter-evans/dockerhub-description@v2.1.0
