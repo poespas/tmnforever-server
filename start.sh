@@ -11,4 +11,4 @@ sed -i "s/%SERVER_PASSWORD%/${SERVER_PASSWORD}/" /opt/tmserver/GameData/Config/$
 
 echo "Launching Server"
 echo "./TrackmaniaServer /dedicated_cfg=${FILE_DEDICATED_CFG} /game_settings=${FILE_MATCHSETTINGS} /nodaemon"
-exec ./TrackmaniaServer /dedicated_cfg=${FILE_DEDICATED_CFG} /game_settings=${FILE_MATCHSETTINGS} /nodaemon
+exec /opt/tmserver/TrackmaniaServer /dedicated_cfg=${FILE_DEDICATED_CFG} /game_settings=${FILE_MATCHSETTINGS} /nodaemon
