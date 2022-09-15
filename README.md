@@ -11,7 +11,7 @@ Docker-compose.yml
 version: '3.5'
 services:
     tmserver:
-        image: 'wortel538/tmnforever-server:latest'
+        image: 'wortel538/tmnationsforever-server:latest'
         restart: unless-stopped
         ports:
             - '2350:2350'
@@ -31,7 +31,7 @@ docker run -d \
   -e MASTERSERVER_PASSWORD=computer123 \
   -p 2350:2350 \
   -p 3450:3450 \
-  wortel538/tmnforever-server:latest
+  wortel538/tmnationsforever-server:latest
 ```
 
 ### Environment variables
