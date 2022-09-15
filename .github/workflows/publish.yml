@@ -27,3 +27,11 @@ jobs:
         with:
           push: true
           tags: wortel538/tmnationsforever-server:latest
+          - name: Docker Hub Description
+      - 
+        name: Modify docker description
+        uses: peter-evans/dockerhub-description@v2.1.0
+        env:
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}
+          DOCKERHUB_REPOSITORY: wortel538/tmnationsforever-server
