@@ -12,6 +12,9 @@ RUN rm /opt/tmserver/TrackmaniaServer.zip
 COPY templates/dedicated_cfg.xml /opt/tmserver/GameData/Config/dedicated_cfg.txt
 COPY start.sh /opt/tmserver/
 
+RUN mkdir /opt/tmserver/Logs
+RUN ln -sf /dev/stdout /opt/tmserver/Logs/ConsoleLog.1.txt
+
 ENV SERVER_SA_PASSWORD="SuperAdmin"
 ENV FILE_DEDICATED_CFG="dedicated_cfg.txt"
 ENV FILE_MATCHSETTINGS="MatchSettings/Nations/NationsGreen.txt"
