@@ -43,10 +43,11 @@ docker run -d \
 | `MASTERSERVER_PASSWORD` 	| Masterserver password                                                     	| _(none)_                               	| Yes           	|
 | `MASTERSERVER_VALKEY`   	| Masterserver validation key (used  for United)                            	| _(none)_                               	| Yes           	|
 | `SERVER_NAME`           	| Server name                                                               	| My Docker Trackmania server!           	| No            	|
-| `SERVER_COMMENT`        	| Server comment                                                            	| I love Docker                            	| No            	|
+| `SERVER_COMMENT`        	| Server comment                                                            	| I love Docker                          	| No            	|
 | `SERVER_PASSWORD`       	| Server password                                                           	| _(none)_                               	| No            	|
 | `FILE_DEDICATED_CFG`    	| File to dedicated cfg,  _this value is relative to GameData/Config/_      	| dedicated_cfg.txt                      	| No            	|
 | `FILE_MATCHSETTINGS`    	| File to Matchsettings config _this value is relative to GameData/Tracks/_ 	| MatchSettings/Nations/NationsGreen.txt 	| No            	|
+| `XMLRPC_ALLOWREMOTE`    	| Allow XMLRPC to be reached remotely                                       	| False                                 	| No            	|
 
 ### Tiny?
 
