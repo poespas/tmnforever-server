@@ -34,4 +34,10 @@ EXPOSE 2350/tcp
 EXPOSE 2350/udp
 EXPOSE 3450/tcp
 
+HEALTHCHECK \
+    --start-period=30s \
+    --start-interval=5s \
+    --interval=1m \
+    CMD netstat -an | grep 2350 > /dev/null; if [ 0 != $? ]; then exit 1; fi;
+
 CMD ["/opt/tmserver/start.sh"]
